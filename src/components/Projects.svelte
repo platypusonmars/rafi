@@ -1,8 +1,10 @@
 <script lang="ts">
+  import SectionWrapper from './SectionWrapper.svelte';
+
   export let projects;
 </script>
 
-<section class="projects" id="projects">
+<SectionWrapper id="projects">
   <h2>My Projects</h2>
   <div class="projects-grid">
     {#each projects as project}
@@ -39,4 +41,4 @@
       </div>
     {/each}
   </div>
-</section>
+</SectionWrapper>

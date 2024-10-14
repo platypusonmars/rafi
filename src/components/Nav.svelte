@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import SectionWrapper from './SectionWrapper.svelte';
   let theme: string;
 
   onMount(() => {
@@ -14,11 +15,15 @@
   };
 </script>
 
-<nav>
-  <a href="/">home</a>
-  <a href="/projects">projects</a>
-  <a href="/gallery">gallery</a>
-  <button on:click={toggleTheme} class="dark:text-slate-800">
-    {theme === 'dark' ? '🌞 Light Mode' : '🌜 Dark Mode'}
-  </button>
-</nav>
+<SectionWrapper id="navigation">
+  <header>
+    <nav>
+      <a href="/">home</a>
+      <a href="/projects">projects</a>
+      <a href="/gallery">gallery</a>
+      <button on:click={toggleTheme} class="dark:text-slate-800">
+        {theme === 'dark' ? '🌞 Light Mode' : '🌜 Dark Mode'}
+      </button>
+    </nav>
+  </header>
+</SectionWrapper>

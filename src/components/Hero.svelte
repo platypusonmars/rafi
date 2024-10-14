@@ -1,8 +1,9 @@
 <script lang="ts">
   import { DotLottieSvelte } from '@lottiefiles/dotlottie-svelte';
+  import SectionWrapper from './SectionWrapper.svelte';
 </script>
 
-<section class="hero" id="hero">
+<SectionWrapper id="hero">
   <h1>Rafi</h1>
   <h2>Fluff Portfolio 🐾</h2>
   <p>Specializing in food, toys, and luxury kitty lifestyle.</p>
@@ -10,4 +11,4 @@
   <div class="hero-image" id="hero-image">
     <DotLottieSvelte src="src/routes/fluff.lottie" autoplay />
   </div>
-</section>
+</SectionWrapper>

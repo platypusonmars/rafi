@@ -1,8 +1,10 @@
 <script lang="ts">
+  import SectionWrapper from './SectionWrapper.svelte';
+
   export let galleryImages;
 </script>
 
-<section class="gallery" id="gallery">
+<SectionWrapper id="gallery">
   <h2>Gallery</h2>
   <div class="gallery-grid">
     {#each galleryImages as image}
@@ -11,4 +13,4 @@
       </div>
     {/each}
   </div>
-</section>
+</SectionWrapper>

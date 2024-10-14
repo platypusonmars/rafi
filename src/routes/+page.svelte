@@ -5,7 +5,6 @@
   import Experience from '../components/Experience.svelte';
   import Projects from '../components/Projects.svelte';
   import Gallery from '../components/Gallery.svelte';
-  import Footer from '../components/Footer.svelte';
 
   import { galleryImages, projects, experiences } from '../data/data';
 </script>
@@ -18,7 +17,6 @@
   <Experience {experiences} />
   <Projects {projects} />
   <Gallery {galleryImages} />
-  <Footer />
 </main>
 
 <style lang="postcss">
