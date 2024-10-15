@@ -33,7 +33,7 @@
     <div class="flex items-center gap-4">
       <button
         aria-label="View Projects"
-        class="flex items-center px-4 py-2 text-4xl text-indigo-500 rounded-md sm:text-5xl md:text-6xl dark:bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-opacity-50 swing"
+        class="flex items-center px-4 py-2 text-4xl text-indigo-500 bg-transparent rounded-md sm:text-5xl md:text-6xl focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-opacity-50 swing"
       >
         <i class="fa-solid fa-chevron-down dark:text-white"></i>
       </button>
