@@ -2,10 +2,21 @@
   import { openModal } from '../stores/index';
   import { onMount } from 'svelte';
   let theme: string;
+  let isScrolled = false; // New variable to track scroll state
 
   onMount(() => {
     theme = localStorage.getItem('theme') || 'light';
     document.body.classList.toggle('dark', theme === 'dark');
+
+    const handleScroll = () => {
+      isScrolled = window.scrollY > 0; // Update state based on scroll position
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   });
 
   const toggleTheme = () => {
@@ -16,7 +27,7 @@
 </script>
 
 <header
-  class="relative z-20 flex flex-col flex-1 max-w-[1400px] mx-auto w-full p-4 m-2"
+  class={`fixed top-0 left-0 right-0 z-20 flex flex-col max-w-[1400px] mx-auto w-full p-4 transition-all duration-1000 ease-in-out ${isScrolled ? 'bg-yellow-100 bg-opacity-80 dark:bg-gray-800 dark:bg-opacity-80 shadow' : 'bg-transparent'}`}
 >
   <div class="flex flex-row justify-between">
     <a
@@ -28,9 +39,10 @@
       </h1>
     </a>
 
+    <!-- TODO: fix the nav bar on mobile -->
     <button
       on:click={() => ($openModal = true)}
-      class="grid md:hidden place-items-center"
+      class="grid bg-transparent md:hidden place-items-center"
     >
       <i class="fa-solid fa-burger"></i>
     </button>
@@ -53,7 +65,7 @@
       <button
         on:click={toggleTheme}
         class={`px-4 py-2 rounded-md transition-colors duration-500 ease-in-out bg-transparent
-            ${theme === 'dark' ? ' text-white  ' : 'text-slate-800 '}
+            ${theme === 'dark' ? ' text-white ' : 'text-slate-800 '}
             focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-opacity-50
             `}
         aria-label={theme === 'dark'

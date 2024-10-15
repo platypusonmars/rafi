@@ -19,6 +19,8 @@
     'gallery',
   ];
 
+  let isLoading = true;
+
   // Scroll event listener
   const handleScroll = () => {
     sections.forEach((section) => {
@@ -34,6 +36,12 @@
   };
 
   onMount(() => {
+    // Simulate loading
+    // TODO: remove
+    setTimeout(() => {
+      isLoading = false; // Set loading to false after 1.5 seconds
+    }, 500);
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -43,10 +51,20 @@
 </script>
 
 <main>
-  <Hero {currentSection} />
-  <Hobbies {currentSection} />
-  <Avoids {currentSection} />
-  <Experience {experiences} {currentSection} />
-  <Projects {projects} {currentSection} />
-  <!-- <Gallery {galleryImages} {currentSection} /> -->
+  {#if isLoading}
+    <div
+      class="fixed inset-0 z-50 flex items-center justify-center bg-white dark:bg-slate-800"
+    >
+      <div
+        class="w-16 h-16 border-t-4 border-b-4 border-indigo-500 rounded-full animate-spin"
+      ></div>
+    </div>
+  {:else}
+    <Hero {currentSection} />
+    <Hobbies {currentSection} />
+    <Avoids {currentSection} />
+    <Experience {experiences} {currentSection} />
+    <Projects {projects} {currentSection} />
+    <!-- <Gallery {galleryImages} {currentSection} /> -->
+  {/if}
 </main>
