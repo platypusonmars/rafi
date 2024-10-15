@@ -48,5 +48,5 @@
   <Avoids {currentSection} />
   <Experience {experiences} {currentSection} />
   <Projects {projects} {currentSection} />
-  <Gallery {galleryImages} {currentSection} />
+  <!-- <Gallery {galleryImages} {currentSection} /> -->
 </main>

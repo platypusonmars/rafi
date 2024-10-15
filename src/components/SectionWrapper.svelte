@@ -49,7 +49,7 @@
     ></div>
   {/if}
   <div
-    class="flex flex-col flex-1 max-w-[1400px] mx-auto w-full z-10 h-full my-10"
+    class="flex flex-col flex-1 max-w-[1400px] mx-auto w-full z-10 h-full my-10 justify-between"
   >
     <slot />
   </div>

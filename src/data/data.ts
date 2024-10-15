@@ -59,14 +59,14 @@ export const projects: Project[] = [
     title: 'Cat Costume Fashion Show',
     description:
       'A showcase of stylish cat costumes with runway walks and photo posing.',
-    image: '/path-to-costume-show-image.jpg',
+    image: '/src/assets/images/rafi1.JPG',
     status: 'active',
     slug: 'one',
   },
   {
     title: 'Cat Tech Product Reviews',
     description: 'Testing and reviewing the latest in cat tech products.',
-    image: '/path-to-tech-reviews-image.jpg',
+    image: '/src/assets/images/rafi3.JPG',
     status: 'completed',
     slug: 'two',
   },
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     title: 'Bird Watching Vlogs',
     description:
       "Stalking birds from a safe distance while pretending that I'm not interested.",
-    image: '/path-to-bird-watching-image.jpg',
+    image: '/src/assets/images/rafi2.JPG',
     status: 'active',
     slug: 'three',
   },
