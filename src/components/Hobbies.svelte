@@ -5,7 +5,7 @@
 
   export let currentSection: string;
 
-  let i = hobbies.length; // Start with 0 to show no cards initially
+  let i = 0; // Start with 0 to show no cards initially
   let max = hobbies.length;
 
   // TODO: add more sound effects
