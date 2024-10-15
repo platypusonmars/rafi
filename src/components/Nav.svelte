@@ -21,10 +21,10 @@
   <div class="flex flex-row justify-between">
     <a
       href="/"
-      class="relative inline-flex items-center px-2 tracking-wider text-white rounded-md bg-slate-800"
+      class="relative inline-flex items-center px-2 tracking-wider transition-all duration-300 rounded-md text-slate-800 dark:text-white dark:bg-slate-800 hover:scale-110 hover:text-amber-500 dark:hover:text-amber-300"
     >
       <h1 class="relative z-10 font-semibold">
-        Rafi the <span class="text-amber-300">Fluff</span>
+        Rafi the <span class="dark:text-amber-300 text-amber-500">Fluff</span>
       </h1>
     </a>
 
@@ -52,8 +52,8 @@
 
       <button
         on:click={toggleTheme}
-        class={`px-4 py-2 rounded-md transition-colors duration-500 ease-in-out
-            ${theme === 'dark' ? 'bg-slate-800 text-white hover:bg-white hover:text-slate-800' : 'bg-white text-slate-800 hover:bg-slate-800 hover:text-white'}
+        class={`px-4 py-2 rounded-md transition-colors duration-500 ease-in-out bg-transparent
+            ${theme === 'dark' ? ' text-white  ' : 'text-slate-800 '}
             focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-opacity-50
             `}
         aria-label={theme === 'dark'
