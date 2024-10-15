@@ -33,6 +33,18 @@ export const hobbies: string[] = [
   '📦 Exploring New Boxes',
   '🥯 Making biscuits',
   '🏎️ Racing Through the Apartment',
+  '🎣 Fishing for compliments',
+  '🎨 Cat Artistry (Paw Prints Everywhere)',
+  '🛋️ Lounging on the Couch',
+  '🕶️ Posing for Instagram',
+  '🧹 Chasing the Broom',
+  '🧗 Climbing on Shelves',
+  '🛏️ Stealing Your Spot in Bed',
+  '🐦 Watching Birds from the Window',
+  '👁️ Observing Humans Quietly',
+  '🥋 Practicing Martial Arts (Sneak Attacks)',
+  '🚪 Trying to Open Closed Doors',
+  '🎭 Mastering the "Sad Eyes" Look',
 ];
 
 export const projects: Project[] = [

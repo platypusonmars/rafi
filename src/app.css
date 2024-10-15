@@ -10,11 +10,12 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-*,
+/* TODO: fix */
+/* *,
 *:before,
 *:after {
   @apply cursor-default;
-}
+} */
 
 h1,
 h2,
@@ -40,6 +41,7 @@ button,
   cursor: pointer;
   transition: background-color 0.2s, box-shadow 0.2s, outline 0.2s,
     transform 0.5s ease;
+  outline: none;
 }
 
 button:hover {
