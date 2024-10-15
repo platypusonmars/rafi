@@ -3,17 +3,6 @@
   import SectionWrapper from './SectionWrapper.svelte';
 
   export let currentSection: string;
-
-  import { onMount } from 'svelte';
-  let isBouncing = false;
-
-  onMount(() => {
-    const interval = setInterval(() => {
-      isBouncing = !isBouncing;
-    }, 1500);
-
-    return () => clearInterval(interval);
-  });
 </script>
 
 <SectionWrapper id="hero" {currentSection}>
@@ -44,7 +33,7 @@
     <div class="flex items-center gap-4">
       <button
         aria-label="View Projects"
-        class={`flex items-center px-4 py-2 text-4xl text-indigo-500 rounded-md sm:text-5xl md:text-6xl dark:bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-opacity-50 ${isBouncing ? 'bounce' : ''}`}
+        class="flex items-center px-4 py-2 text-4xl text-indigo-500 rounded-md sm:text-5xl md:text-6xl dark:bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-opacity-50 swing"
       >
         <i class="fa-solid fa-chevron-down dark:text-white"></i>
       </button>
@@ -53,23 +42,26 @@
 </SectionWrapper>
 
 <style>
-  @keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-      transform: translateY(0) rotate(0deg); /* Start with no rotation */
-    }
-    40% {
-      transform: translateY(-10px) rotate(5deg); /* Slight upward movement with rotation */
-    }
-    60% {
-      transform: translateY(-5px) rotate(-5deg); /* Slight downward movement with opposite rotation */
-    }
+  .swing {
+    transform-origin: top center;
+    animation: swing 2s ease-in-out infinite;
   }
 
-  .bounce {
-    animation: bounce 1s infinite;
+  @keyframes swing {
+    20% {
+      transform: rotate(15deg);
+    }
+    40% {
+      transform: rotate(-10deg);
+    }
+    60% {
+      transform: rotate(5deg);
+    }
+    80% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
 </style>
