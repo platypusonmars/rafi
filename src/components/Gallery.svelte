@@ -2,9 +2,11 @@
   import SectionWrapper from './SectionWrapper.svelte';
 
   export let galleryImages;
+
+  export let currentSection: string;
 </script>
 
-<SectionWrapper id="gallery">
+<SectionWrapper id="gallery" {currentSection}>
   <h2>Gallery</h2>
   <div class="gallery-grid">
     {#each galleryImages as image}

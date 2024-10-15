@@ -2,9 +2,11 @@
   import SectionWrapper from './SectionWrapper.svelte';
 
   export let experiences;
+
+  export let currentSection: string;
 </script>
 
-<SectionWrapper id="experiences">
+<SectionWrapper id="experiences" {currentSection}>
   <h2>Experience</h2>
   <div class="experiences-grid">
     {#each experiences as experience}

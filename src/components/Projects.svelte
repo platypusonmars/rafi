@@ -2,9 +2,11 @@
   import SectionWrapper from './SectionWrapper.svelte';
 
   export let projects;
+
+  export let currentSection: string;
 </script>
 
-<SectionWrapper id="projects">
+<SectionWrapper id="projects" {currentSection}>
   <h2>My Projects</h2>
   <div class="projects-grid">
     {#each projects as project}

@@ -7,6 +7,12 @@ export default {
       content: {
         empty: '""', // Empty string for the `before` pseudo-element
       },
+      cursor: {
+        default: 'url("/cat-paw.svg"), auto',
+      },
+      minHeight: {
+        'screen-with-navbar': 'calc(100vh - 76px)',
+      },
     },
   },
   plugins: [],

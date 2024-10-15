@@ -2,7 +2,9 @@
   import SectionWrapper from './SectionWrapper.svelte';
 </script>
 
-<SectionWrapper id="footer">
+<div
+  class="relative z-20 flex flex-col flex-1 max-w-[1400px] mx-auto w-full p-4 m-2"
+>
   <p>&copy; {new Date().getFullYear()} Rafael Purr Inc. All rights reserved.</p>
   <div>
     <a
@@ -21,4 +23,4 @@
       aria-label="Twitter">Twitter</a
     >
   </div>
-</SectionWrapper>
+</div>
