@@ -36,7 +36,10 @@
   }
 </script>
 
-<section {id} class="relative z-10 flex flex-col min-h-screen p-4 m-2">
+<section
+  {id}
+  class="relative z-10 flex flex-col min-h-[calc(100vh-100px)] p-4 m-2"
+>
   {#if isActive}
     <div
       in:fade={{ duration: 500 }}
@@ -45,7 +48,9 @@
       -translate-x-[30%] translate-y-[20%] rounded-full ${currentColor} opacity-30 blur-[80px] animate-blob`}
     ></div>
   {/if}
-  <div class="flex flex-col flex-1 max-w-[1400px] mx-auto w-full z-10">
+  <div
+    class="flex flex-col flex-1 max-w-[1400px] mx-auto w-full z-10 h-full my-10"
+  >
     <slot />
   </div>
 </section>

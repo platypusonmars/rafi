@@ -79,7 +79,7 @@
     {#if i >= 1}
       <p
         transition:fade
-        class="text-lg italic tracking-widest text-gray-600 dark:text-gray-300"
+        class="text-lg italic tracking-widest text-center text-gray-600 uppercase dark:text-gray-300"
       >
         Click on the hobbies below for a purring experience! 🎶
       </p>
@@ -92,14 +92,14 @@
           class="flex items-center justify-center p-6 transition-all duration-300 rounded-lg shadow-lg outline-none
             {currentlyPlayingIndex === index
             ? 'bg-yellow-200 dark:bg-emerald-600 animate-pulse'
-            : 'bg-white dark:bg-slate-600'} 
+            : 'bg-white dark:bg-slate-200 '} 
             hover:scale-105 hover:shadow-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-opacity-50"
           transition:slide
           on:click={() => toggleSound(index)}
           aria-label={`Play or stop sound for ${item}`}
         >
           <p
-            class="text-lg font-semibold text-center text-gray-800 dark:text-sky-100"
+            class="text-lg font-semibold text-center text-gray-800 dark:text-sky-800"
           >
             {item}
           </p>

@@ -18,6 +18,13 @@ export const avoids: string[] = [
   '🚗 Car Drives',
   '🛁 Bath',
   '🔊 Noise',
+  '🎉 Parties',
+  '🎵 Loud Music',
+  '🌪️ Windy Weather',
+  '🏠 Strange Homes',
+  '🌧️ Rain',
+  '🚿 Showers',
+  '🐕 Other Pets',
 ];
 
 export const hobbies: string[] = [
