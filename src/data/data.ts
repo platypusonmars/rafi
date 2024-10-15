@@ -82,32 +82,33 @@ export const projects: Project[] = [
 
 export const experiences: Experience[] = [
   {
-    title: 'Professional Cat Poser',
+    title: 'Professional Cat Poser 🐱',
     description:
-      'Seeking more clients to advertise expensive kitty items. If you have premium products for the pampered feline, I’m your cat!',
+      'Seeking more clients to advertise expensive kitty items. If you have premium products for the pampered feline, I’m your cat! 💼',
   },
   {
-    title: 'Expert Cuddler',
-    description: 'I know how to make humans think I like them! ;)',
+    title: 'Expert Cuddler 🤗',
+    description:
+      'I know how to make humans think I like them! 😉 My purring skills are unmatched, and I have perfected the art of finding the coziest spots on laps for maximum cuddle efficiency. 🐾',
   },
   {
-    title: 'Full-time Home Sitting Diva',
+    title: 'Full-time Home Sitting Diva 🏠',
     description:
-      'I have been living the high life as a home-sitting diva, receiving the best care and plenty of luxury kitty products.',
+      'I have been living the high life as a home-sitting diva, receiving the best care and plenty of luxury kitty products. 💅',
   },
   {
-    title: 'Cat Tech Product Tester',
+    title: 'Cat Tech Product Tester 🖥️',
     description:
-      'Testing the latest and greatest in cat tech products like automatic litter boxes, water fountains, and smart feeders.',
+      'Testing the latest and greatest in cat tech products like automatic litter boxes, water fountains, and smart feeders. 🧪',
   },
   {
-    title: 'Fashion Model',
+    title: 'Fashion Model 👗',
     description:
-      "Runway walking for my humans to appreciate my beauty demonstrating some cat costumes (didn't particularly enjoy wearing them).",
+      "Runway walking for my humans to appreciate my beauty demonstrating some cat costumes (didn't particularly enjoy wearing them). 📸",
   },
   {
-    title: 'Professional Bird Stalker',
+    title: 'Professional Bird Stalker 🐦',
     description:
-      'Expertly stalking birds from a safe distance, plotting my next move while maintaining a cute and innocent appearance. (Don’t let the humans know it’s just a hobby!)',
+      'Expertly stalking birds from a safe distance, plotting my next move while maintaining a cute and innocent appearance. (Don’t let the humans know it’s just a hobby!) 🕵️‍♂️',
   },
 ];
