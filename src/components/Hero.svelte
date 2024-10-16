@@ -52,7 +52,7 @@
 
     <!-- TODO: replace with own hand-drawn animation -->
     <div class="h-96" id="hero-image">
-      <DotLottieSvelte src="src/routes/fluff.lottie" autoplay />
+      <DotLottieSvelte src="/lottie/fluff.lottie" loop autoplay speed={0.8} />
     </div>
 
     <div class="flex items-center gap-4">
