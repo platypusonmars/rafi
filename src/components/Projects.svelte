@@ -37,6 +37,7 @@
             {project.status}
           </p>
           <div class="flex flex-wrap gap-2 my-2 tags">
+            <!-- TODO: create a reusable tag component -->
             <!-- Conditional tags -->
             {#if project.title === 'Cat Costume Fashion Show'}
               <span

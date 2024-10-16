@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { fade, fly } from 'svelte/transition';
+  import { fly } from 'svelte/transition';
   import { avoids } from '../data/data';
   import SectionWrapper from './SectionWrapper.svelte';
   import BaseButton from './BaseButton.svelte';

@@ -3,6 +3,9 @@
   export let additionalClasses: string = '';
 </script>
 
+<!-- TODO -->
+<!-- Replace other buttons that could require this button and create more generic components that could be reused -->
+
 <button
   class={`flex items-center justify-center px-10 py-4 transition-all duration-300 rounded-full shadow-lg outline-none
           hover:scale-105 hover:shadow-amber-500 

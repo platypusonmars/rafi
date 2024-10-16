@@ -50,6 +50,7 @@
       {displayedTitle}
     </p>
 
+    <!-- TODO: replace with own hand-drawn animation -->
     <div class="h-96" id="hero-image">
       <DotLottieSvelte src="src/routes/fluff.lottie" autoplay />
     </div>

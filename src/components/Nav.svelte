@@ -2,7 +2,7 @@
   import { openModal } from '../stores/index';
   import { onMount } from 'svelte';
   let theme: string;
-  let isScrolled = false; // New variable to track scroll state
+  let isScrolled = false;
 
   onMount(() => {
     theme = localStorage.getItem('theme') || 'light';

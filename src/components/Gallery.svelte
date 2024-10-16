@@ -6,6 +6,8 @@
   export let currentSection: string;
 </script>
 
+<!-- TODO: add gallery sliders, maybe create a mini-instagram window or aka-tinder experience for swiping Rafi's pics -->
+
 <SectionWrapper id="gallery" {currentSection}>
   <h2>Gallery</h2>
   <div class="gallery-grid">

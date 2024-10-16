@@ -2,9 +2,10 @@
   import SectionWrapper from './SectionWrapper.svelte';
 
   export let experiences;
-
   export let currentSection: string;
 </script>
+
+<!-- TODO: add links for each experience detail page, create detail page -->
 
 <SectionWrapper id="experiences" {currentSection}>
   <h2

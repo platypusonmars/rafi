@@ -86,6 +86,7 @@
     {/if}
 
     <!-- Dynamic cards -->
+    <!-- TODO: extract to the card component -->
     <div class="grid grid-cols-1 gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3">
       {#each hobbies.slice(0, i) as item, index}
         <button
@@ -110,6 +111,7 @@
     <!-- Hidden audio element for playback -->
     <audio bind:this={audioElement} preload="auto"></audio>
 
+    <!-- TODO: refactor to smaller reusable components -->
     {#if i >= 1}
       <div class="flex flex-col gap-4 sm:gap-10 sm:flex-row" transition:fade>
         <!-- Volume Control -->
