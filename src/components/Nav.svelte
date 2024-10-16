@@ -27,7 +27,7 @@
 </script>
 
 <header
-  class={`fixed top-0 left-0 right-0 z-20 flex flex-col max-w-[1400px] mx-auto w-full p-4 transition-all duration-1000 ease-in-out ${isScrolled ? 'bg-yellow-100 bg-opacity-80 dark:bg-gray-800 dark:bg-opacity-80 shadow' : 'bg-transparent'}`}
+  class={`fixed top-0 left-0 right-0 z-20 flex flex-col p-4 transition-all duration-1000 ease-in-out ${isScrolled ? 'bg-yellow-100 bg-opacity-80 dark:bg-gray-800 dark:bg-opacity-80 shadow' : 'bg-transparent'}`}
 >
   <div class="flex flex-row justify-between">
     <a
