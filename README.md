@@ -1,3 +1,15 @@
+# Rafi's Artsy Portfolio
+
+[Live Demo](https://rafi-artsy-portfolio.vercel.app/) | ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+
+## Overview
+
+Welcome to Rafi's Artsy Portfolio! This project showcases my skills and projects. You can view the live version of the project [here](https://rafi-artsy-portfolio.vercel.app/).
+
+## Contributing
+
+Feel free to contribute! You can check out the live demo [here](https://rafi-artsy-portfolio.vercel.app/) to see the project in action.
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
