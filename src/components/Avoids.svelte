@@ -21,8 +21,8 @@
   );
 
   let audio: HTMLAudioElement;
-  let isMuted = false;
-  let volume = 0.5; // Initial volume set to 50%
+  let isMuted: boolean = false;
+  let volume: number = 0.5; // Initial volume set to 50%
 
   const burstBubble = (index: number) => {
     // Play the sound effect
@@ -77,8 +77,8 @@
     </div>
 
     <!-- Audio element -->
-    <audio bind:this={audio}>
-      <source src="/src/assets/sounds/bubble.mp3" type="audio/mpeg" />
+    <audio bind:this={audio} preload="auto">
+      <source src="/sounds/bubble.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
 

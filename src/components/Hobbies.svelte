@@ -5,17 +5,17 @@
 
   export let currentSection: string;
 
-  let i = 0; // Start with 0 to show no cards initially
-  let max = hobbies.length;
+  let i: number = 0; // Start with 0 to show no cards initially
+  let max: number = hobbies.length;
 
   // TODO: add more sound effects
   // Sound file paths
-  const sounds = ['src/assets/sounds/cat1.mp3', 'src/assets/sounds/cat2.mp3'];
+  const sounds: string[] = ['/sounds/cat1.mp3', '/sounds/cat2.mp3'];
 
   let audioElement: HTMLAudioElement;
-  let isPlaying = false;
-  let currentSoundIndex = 0;
-  let volume = 1; // Initial volume (range: 0.0 to 1.0)
+  let isPlaying: boolean = false;
+  let currentSoundIndex: number = 0;
+  let volume: number = 1; // Initial volume (range: 0.0 to 1.0)
   let currentlyPlayingIndex: number | null = null; // Track which card is playing
 
   const toggleSound = (index: number) => {
