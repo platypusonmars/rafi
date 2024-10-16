@@ -4,7 +4,7 @@
 
 ## Overview
 
-Welcome to Rafi's Artsy Portfolio! This project showcases my skills and projects. You can view the live version of the project [here](https://rafi-artsy-portfolio.vercel.app/).
+Welcome to Rafi's Artsy Portfolio! This project showcases his skills and projects. You can view the live version of the project [here](https://rafi-artsy-portfolio.vercel.app/).
 
 ## Contributing
 
