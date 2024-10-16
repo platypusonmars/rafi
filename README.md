@@ -1,6 +1,10 @@
 # Rafi's Artsy Portfolio
 
-[Live Demo](https://rafi-artsy-portfolio.vercel.app/) | ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+[Live Demo | Vercel](https://rafi-artsy-portfolio.vercel.app/) ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+
+[Live Demo | Netlify](https://the-fabulous-world-of-rafi.netlify.app/) ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+
+Make sure to check out the dark mode - Rafi's fav! 🌛
 
 ## Overview
 
