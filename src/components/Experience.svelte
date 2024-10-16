@@ -9,7 +9,7 @@
 
 <SectionWrapper id="experiences" {currentSection}>
   <h2
-    class="mt-20 mb-10 font-bold text-center text-red-600 uppercase text-8xl dark:text-red-400"
+    class="mt-20 mb-10 text-4xl font-bold text-center text-red-600 uppercase sm:text-5xl md:text-8xl dark:text-red-400"
   >
     Experience
   </h2>

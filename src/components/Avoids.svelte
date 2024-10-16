@@ -70,7 +70,7 @@
       </h2>
 
       <p
-        class="text-lg italic tracking-widest text-gray-600 uppercase dark:text-gray-300"
+        class="text-lg italic tracking-widest text-center text-gray-600 uppercase dark:text-gray-300"
       >
         Click on the avoids below to see what happens! 🎶
       </p>
